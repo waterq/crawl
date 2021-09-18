@@ -1,0 +1,35 @@
+{
+	"folders": {
+		"CrawlDB": {}
+	},
+	"connections": {
+		"mariaDB-17bb93436a8-7b0edf81231dce7": {
+			"provider": "mysql",
+			"driver": "mariaDB",
+			"name": "crawl",
+			"save-password": true,
+			"read-only": false,
+			"folder": "CrawlDB",
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
